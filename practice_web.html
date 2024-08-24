@@ -13,9 +13,11 @@
             position: relative;
             display: inline-block;
             width: 100vw;
+            background-color: rgb(71, 71, 71);
         }
         header>section{
             display: flex;
+            color: white;
         }
         header>section>img{
             width: 200px;
@@ -25,7 +27,7 @@
             font-size: 50px;
         }
         header>nav{
-            top: 20px;
+            top: 10px;
             position: absolute;
             right: 20px;
         }
@@ -38,9 +40,46 @@
         header>nav>ul>li>a{
             text-decoration: none;
             font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+        footer{
+            width: 100vw;
+            position: absolute;
+            bottom: 0;
+        }
+        footer>section{
+            font-size: 30px;
+            color: white;
+            background-color: rgb(55, 55, 60);
+        }
+        footer>p{
+            height: 40px;
+            background-color: rgb(128, 128, 128);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: 25px;
             color: black;
         }
-       
+        hero{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        hero>section{
+            display: flex;
+            position: absolute;
+            top: 20vh;
+            text-align: center;
+            align-items: center;
+            font-size: 40px;
+            
+            
+        }
+        hero>section>img{
+            width: 500px;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +98,31 @@
             </ul>
         </nav>
     </header>
+    <!-- hero section -->
+    <hero>
+        <section>
+            <h1>
+                Welcome <br>
+                to <br>
+                My World <br>
+                I am a Software Engineer
+            </h1>
+            <img src="assets/illustration-graphic-cartoon-character-of-business-education-free-vector.jpg" alt="">
+        </section>
+        
+    </hero>
+    <!-- footer section -->
+    <footer>
+        <section>
+            <h1>IJSE</h1>
+            <br><br>
+            <address>132A,Kandy Rd,HAtton</address>
+            <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a><br>
+            <a href="tel:+94756519837">+94756519837</a>
+        </section>
+        
+        <p>Developed By Dhanujaya</p>
+    </footer>
 
    
 </body>
