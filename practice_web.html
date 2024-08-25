@@ -3,127 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Sahan Dhnaujaya">
+    <meta name="description" content="Website template">
+    <meta name="keywords" content="html,css,javaScript">
+    <title>Website</title>
+    <link rel="icon" href="assets/png-transparent-website-development-web-design-web-page-favicon-web-design-web-design-globe-symmetry.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
         }
         header{
-            position: relative;
-            display: inline-block;
-            width: 100vw;
-            background-color: rgb(71, 71, 71);
-        }
-        header>section{
             display: flex;
-            color: white;
+            flex-direction: row;
+            align-items: center;
+            background: rgb(128, 128, 128);
+            position: relative;
         }
-        header>section>img{
-            width: 200px;
-            height: 50px;
+        header>img{
+            width: 300px;
         }
-        header>section>h1{
+        header>h1{
+            width:70px;
             font-size: 50px;
+            text-align: center;
+            color: black;
         }
         header>nav{
-            top: 10px;
             position: absolute;
             right: 20px;
         }
         header>nav>ul>li{
             display: inline-block;
-            right: 0;
-            padding-left: 20px ;
-            
+            padding: 10px;
         }
         header>nav>ul>li>a{
             text-decoration: none;
-            font-size: 30px;
             color: rgb(255, 255, 255);
-        }
-        footer{
-            width: 100vw;
-            position: absolute;
-            bottom: 0;
-        }
-        footer>section{
-            font-size: 30px;
-            color: white;
-            background-color: rgb(55, 55, 60);
-        }
-        footer>p{
-            height: 40px;
-            background-color: rgb(128, 128, 128);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bolder;
             font-size: 25px;
-            color: black;
-        }
-        hero{
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-        hero>section{
-            display: flex;
-            position: absolute;
-            top: 20vh;
-            text-align: center;
-            align-items: center;
-            font-size: 40px;
-            
-            
-        }
-        hero>section>img{
-            width: 500px;
+            font-weight: bolder;
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: normal; 
         }
     </style>
 </head>
 <body>
-    <!-- Header section -->
+    <!-- header section -->
     <header>
-        <section>
-            <img src="assets/Ijse_logo.png" alt="IJSE logo">
-            <h1>IJSE</h1>
-        </section>
-        <!-- nav bar -->
+        <img src="assets/Ijse_logo.png" alt="IJSE Logo">
+        <h1>IJSE</h1>
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Project</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- hero section -->
-    <hero>
-        <section>
-            <h1>
-                Welcome <br>
-                to <br>
-                My World <br>
-                I am a Software Engineer
-            </h1>
-            <img src="assets/illustration-graphic-cartoon-character-of-business-education-free-vector.jpg" alt="">
-        </section>
-        
-    </hero>
-    <!-- footer section -->
-    <footer>
-        <section>
-            <h1>IJSE</h1>
-            <br><br>
-            <address>132A,Kandy Rd,HAtton</address>
-            <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a><br>
-            <a href="tel:+94756519837">+94756519837</a>
-        </section>
-        
-        <p>Developed By Dhanujaya</p>
-    </footer>
-
-   
+    
 </body>
 </html>
