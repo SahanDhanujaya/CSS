@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        section>div>div{
+            height: 400px;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 10px 10px 100px lightgray;
+        }
+        section>div>div>h1{
+            font-size: 40px;
+        }
+        section>div>div>p{
+            font-size: 20px;
+        }
+        section>div>div>button{
+            font-size: 25px;
+            
+            left: 0;
+            right: 0;
+            top: 50px;
+            bottom: 0;
+            margin: auto;
+        }
+        @media all and (max-width:768px){
+            section {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        }
+        @media all and (max-width:375px){
+            section {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <div>
+                <h1>Case 01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique est deserunt.</p>
+                <button>Explore🌎</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Case 01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique est deserunt.</p>
+                <button>Explore🌎</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Case 01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique est deserunt.</p>
+                <button>Explore🌎</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Case 01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique est deserunt.</p>
+                <button>Explore🌎</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

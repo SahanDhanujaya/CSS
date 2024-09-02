@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            flex-direction: row;
+            align-items: center;
+            background: rgb(128, 128, 128);
+            position: relative;
+            height: 80px;
+        }
+
+        header>img {
+            width: 300px;
+        }
+
+        header>h1 {
+            width: 70px;
+            font-size: 50px;
+            text-align: center;
+            color: black;
+        }
+
+        header>nav {
+            position: absolute;
+            right: 20px;
+        }
+
+        header>nav>ul>li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        header>nav>ul>li>a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        footer {
+            font-size: 25px;
+            background-color: rgb(193, 193, 193);
+            position: relative;
+            width: 100vw;
+        }
+
+        footer>h1 {
+            color: rgb(0, 0, 0);
+        }
+
+        footer>p {
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            background-color: rgb(67, 67, 67);
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <img src="assets/Ijse_logo.png" alt="IJSE Logo">
+        <h1>IJSE</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero section -->
+    <section>
+        <div>
+            <p>Hello <br>
+                I am Professional Software Engineer <br>
+                Welcome to my world
+
+            </p>
+            <img src="assets/illustration-graphic-cartoon-character-of-business-education-free-vector.jpg"
+                alt="learn to success">
+        </div>
+    </section>
+    <footer>
+        <h1>IJSE</h1>
+        <a href="mailto:sahandanujaya48@gmail.com">sahandanujaya48@gmail.com</a><br>
+        <a href="tel:+94756519837">0756519837</a>
+        <p>Diveloped by Dhanujaya</p>
+    </footer>
+</body>
+</html>

@@ -16,7 +16,9 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
-        body {}
+        body {
+            overflow-x: hidden;
+        }
 
         * {
             margin: 0;
@@ -26,7 +28,8 @@
         }
 
         header {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
             flex-direction: row;
             align-items: center;
             background: rgb(128, 128, 128);
@@ -95,8 +98,8 @@
         }
 
         section>div {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
         }
 
         section>div>p {
@@ -226,13 +229,16 @@
 
         }
 
-        form {
-            width: 1100px;
+        .contact form {
+            width: 1100px;  
+            height: 700px;
+            justify-content: center;
             position: relative;
+            left: 30vw;
 
         }
         .contact h1{
-            position: relative;
+            position: absolute;
             font-size: 60px;
             font-weight: bolder;
             font-family: "Kanit", sans-serif;
@@ -243,47 +249,30 @@
             right: 0;
             left: 0; 
         }
-
-        form input { 
-            margin: 10px;
-            width: 500px;
-            height: 50px;
-            font-size: 30px;
-            border: 3px solid;
-        }
-
-        form textarea {
-            top: 5px;
-            border: solid 3px;
-            width: 1015px;
-            font-size: 30px;
-            height: 300px;
-            position: relative;
-            left: 41px;
-        }
-        form>section>div{
-            position: relative;
-            top: 0;
-        }
-        form>section{
-            display: inline-block;
-            left: calc(100vw/4);
-
+        .contact{
             
         }
-        form>section>button{
-            position: relative;
-            width: 200px;
-            height: 50px;
-            top: 10px;
-            left: 40px;
+        .contact form input{
+            width: 500px;
+            height: 40px;
             font-size: 30px;
-            color: whitesmoke;
-            background-color: rgb(129, 129, 129);
         }
-        form>section>button:hover{
-            border-top-right-radius: 30px;
+        .contact form textarea{
+            width: 1004px;
+            height: 500px;
+            margin-top: 10px;
+            font-size: 40px;
         }
+       
+        @media all and (max-width:375px){
+            section>div{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                font-size: 15px;
+            }
+
+        }
+        
         
     </style>
 </head>
@@ -360,17 +349,11 @@
     </section>
     <!-- contact section -->
      <section class="contact">
-        <!-- send email -->
         <h1>Contact</h1>
         <form>
-            <section>
-                <div>
-                    <input type="text" placeholder="your name">
-                    <input type="text" placeholder="your email">
-                </div>
-                <textarea name="message" placeholder="message"></textarea>
-                <button type="submit">Submit</button>
-            </section>
+            <input type="text" placeholder="your name">
+            <input type="text" placeholder="your email"><br>
+            <textarea name="" id="" placeholder="message"></textarea>
         </form>
      </section>
     <footer>

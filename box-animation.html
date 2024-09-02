@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 500px;
+            border: 2px solid green;
+        }
+        div>div{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: none;
+            position: absolute;
+
+            animation: myAnimation 10s infinite;
+        }
+        @keyframes myAnimation{
+            0%{
+                margin-left:0;  
+                
+            }
+            25%{
+                margin-left: 800px;
+                margin-top: 0;
+                
+            }
+            50%{
+                margin-left: 800px;
+                margin-top: 300px;
+               
+            }
+            75%{
+                margin-top: 300px;
+                margin-right: 800px;
+            }
+            100%{
+                margin-bottom: 300px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+    </div>
+</body>
+</html>
